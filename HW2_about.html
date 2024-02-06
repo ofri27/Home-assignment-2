@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel= "stylesheet" href="./HW2.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+        <title> About </title>
+    </head>
+    <body>
+        <header>
+        <nav>
+            <ul class="sidebar">
+                <li onclick= hideSidebar()> <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg> </a></li>
+                <li> <a href="HW2_homepage.html"> <b> Home </b></a> </li>
+                <li> <a href="HW2_about.html" class="active"> <b> About </b></a> </li>
+                <li> <a href="HW2_skills.html"> <b> Skills & Resume </b></a> </li>
+                <li> <a href="HW2_projects.html"> <b> Projects </b></a> </li>
+                <li> <a href="HW2_contacts.html"> <b> Contacts </b></a> </li>
+            </ul>
+            <a href="HW2_homepage.html"> <b> Ofri. </b> </a>
+            <ul>
+                <li class="hideOnMobile"> <a href="HW2_homepage.html"> <b> Home </b></a> </li>
+                <li class="hideOnMobile"> <a href="HW2_about.html" class="active"> <b> About </b></a> </li>
+                <li class="hideOnMobile"> <a href="HW2_skills.html"> <b> Skills & Resume </b></a> </li>
+                <li class="hideOnMobile"> <a href="HW2_projects.html"> <b> Projects </b></a> </li>
+                <li class="hideOnMobile"> <a href="HW2_contacts.html"> <b> Contacts </b></a> </li>
+                <li class="menu-button" onclick = showSidebar()> <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav> 
+        <script>
+            function showSidebar() {
+                const sidebar = document.querySelector('.sidebar');
+                sidebar.style.display = 'flex';
+            }
+            function hideSidebar() {
+                const sidebar = document.querySelector('.sidebar');
+                sidebar.style.display = 'none';
+            }
+        </script>
+        </header>
+        <section class="about">
+            <div>
+                <h2><b><u> About </u></b></h2>
+                <p> 
+                    Dedicated and hard-working Industrial Engineering and Management student with a proven track record of success 
+                    in team-based and leadership roles. Excellent communicator with strong interpersonal skills. 
+                    Seeking student position to gain experience and develop skills.
+                </p>
+                <div class="flex-education-img">
+                    <div class="education">
+                        <h3><b> Education </b></h3>
+                        <p>
+                            <ul class="education-ul"> 
+                                <li> <u> Multidisciplinary School of Sciences and Arts </u>
+                                <br/>
+                                2014-2016.
+                                <br/>
+                                5 math units, 5 English units and expansion of majors: 5 physics units, 5 geography units.
+                                </li>
+                                <li><u> Ruppin Academic College / B.Sc. in Industrial Engineering and Management </u>
+                                <br/>
+                                2021 - Present ( 3th Year).
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="img">
+                        <img src="Images\portret.jpg" alt="PortretImage"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
